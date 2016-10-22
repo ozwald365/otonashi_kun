@@ -1,11 +1,18 @@
 {% extends 'layout.twig' %}
 {% block content %}
+
+{{ asset_js('app.js') }}
 <header>
 <div id="logo" class="logo_head">{{ asset_img('logo.gif') }}</div>
 {{mail}}さんようこそ！
 <br>
 <br>
-グラフ
+
+{# {{ asset_img('otonasikungraph.jpg') }} #}
+<img id="img" src="" />
+<div id="chartContainer"></div>
+
+
 </header>
 
     {% endblock %}
